@@ -1,113 +1,114 @@
-import Image from 'next/image'
+// import blog from "@/blog/[slug]/page";
+import Blog from "./blog/[slug]/page";
+import React from "react";
 
-export default function Home() {
+export default function Home({ slug, description }: { slug: string; description: string }) {
+	
+
+  const handleClick = () => {
+    
+  };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <main>
+      <body className="container">
+        <div className="margin"></div>
+        <header id="header">
+          <img
+            id="header-img"
+            src="/1.jpeg"
+            alt="cof"
+            width={100}
+            height={100}
+          />
+          <nav id="nav-bar">
+            <a className="nav-link" href="#about">
+              ABOUT US
+            </a>
+            <a className="nav-link" href="#gallery">
+              GALLERY
+            </a>
+            <a className="nav-link" href="#contact">
+              CONTACT
+            </a>
+          </nav>
+        </header>
+
+        <section className="main">
+          <div>
+            <img
+              src="/1.jpeg"
+              width={500}
+              height={500}
             />
-          </a>
-        </div>
-      </div>
+          </div>
+          <div className="form">
+            <h1>Fresh Breakfast With Bassam</h1>
+            <p className="form-p">subscribe for weekly coupons</p>
+            <form id="form" action="/">
+              <input type="email" name="email" id="email" placeholder="enter your email" />
+              <input id="submit" type="submit" value="Get Coupons" className="btn" />
+            </form>
+          </div>
+        </section>
+<section id="blog">
+<div className="blog_par">
+<div id="first" className="blog"  >
+	<div className="layer">London</div>
+	</div>
+<div id="sec" className="blog">
+	<div className="layer"> History</div>
+	</div>
+<div id="third" className="blog">
+	<div className="layer">London night</div>
+	</div>
+		
+		  </div>
+</section>
+        <section id="about">
+          <div id="about-text">
+            <h1>
+              About<span>Us</span>
+            </h1>
+            <br />
+            <p>
+            
+London Bridge is a historic and iconic structure that spans the River Thames, connecting the City of London with Southwark. Although the current bridge, opened to traffic in 1973, might not be as visually striking as its predecessors, it holds a significant place in the history and folklore of London.
+            </p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            <p>
+			The name "London Bridge" is associated with multiple bridges that have occupied the same location over the centuries. The original bridge, built by the Romans around AD 50, was the first permanent crossing over the Thames in the London area. Throughout history, various iterations of London Bridge have been constructed, each with its architectural style and unique features.
+            </p>
+          </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="about-img">
+            <img
+              src="/4.jpg"
+              width={500}
+              height={500}
+            />
+          </div>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+     
+          
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <section id="contact">
+          <form className="formcontact">
+            <h1 className="ch1">
+              Contact<span>Us</span>
+            </h1>
+            <div className="formTop">
+              <input className="name" type="text" placeholder="Name" />
+              <input className="email" type="email" placeholder="Email" />
+            </div>
+            <div className="formBottom">
+              <input className="subject" type="text" placeholder="Subject" />
+              <textarea className="message" placeholder="Message"></textarea>
+              <input className="submit" type="submit" value="Send Now!" />
+            </div>
+          </form>
+        </section>
+      </body>
     </main>
-  )
+  );
 }

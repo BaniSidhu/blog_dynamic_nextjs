@@ -1,13 +1,24 @@
 // import blog from "@/blog/[slug]/page";
+'use client'
+import { link } from "fs";
 import Blog from "./blog/[slug]/page";
 import React from "react";
-
+import Link from "next/link";
+import { withRouter } from "next/router";
+import { useRouter } from "next/navigation";
 export default function Home({ slug, description }: { slug: string; description: string }) {
 	
 
-  const handleClick = () => {
-    
+  const router = useRouter();
+
+  const move_to1 = () => {
+    router.push('./blog/top-eng');
   };
+
+  const move_to2 = () => {
+    router.push('./blog/top-bassam');
+  };
+// 
   return (
     <main>
       <body className="container">
@@ -52,10 +63,10 @@ export default function Home({ slug, description }: { slug: string; description:
         </section>
 <section id="blog">
 <div className="blog_par">
-<div id="first" className="blog"  >
-	<div className="layer">London</div>
+<div id="first" className="blog" onClick={move_to1} >
+	<div className="layer" >London</div>
 	</div>
-<div id="sec" className="blog">
+<div id="sec" className="blog" onClick={move_to2} >
 	<div className="layer"> History</div>
 	</div>
 <div id="third" className="blog">

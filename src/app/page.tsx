@@ -1,4 +1,3 @@
-// import blog from "@/blog/[slug]/page";
 'use client'
 import { link } from "fs";
 import Blog from "./blog/[slug]/page";

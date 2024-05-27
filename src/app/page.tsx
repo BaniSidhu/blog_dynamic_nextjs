@@ -3,9 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Contact from './contact/Contact';
 
 export default function Home({ slug, description }: { slug: string; description: string }) {
   const router = useRouter();
+
 
   const move_to1 = () => {
     router.push('/blog/top-eng');
@@ -80,23 +82,7 @@ export default function Home({ slug, description }: { slug: string; description:
             <img src="/4.jpg" width={500} height={500} alt="about image" />
           </div>
         </section>
-
-        <section id="contact">
-          <form className="formcontact">
-            <h1 className="ch1">
-              Contact<span>Us</span>
-            </h1>
-            <div className="formTop">
-              <input className="name" type="text" placeholder="Name" />
-              <input className="email" type="email" placeholder="Email" />
-            </div>
-            <div className="formBottom">
-              <input className="subject" type="text" placeholder="Subject" />
-              <textarea className="message" placeholder="Message"></textarea>
-              <input className="submit" type="submit" value="Send Now!" />
-            </div>
-          </form>
-        </section>
+<Contact></Contact>     
       </div>
     </main>
   );

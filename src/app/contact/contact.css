@@ -1,0 +1,53 @@
+#contact {
+    margin-top: 5rem;
+    background-color: #dee6f2;
+  }
+  
+  .formcontact {
+    width: 40vw;
+  }
+  
+  .formTop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .formBottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .name,
+  .email {
+    width: 44%;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #eeeeee;
+  }
+  
+  .subject,
+  .message,
+  .submit {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #eeeeee;
+  }
+  
+  .message {
+    height: 150px;
+  }
+  
+  .submit {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    pointer-events: none;
+  }

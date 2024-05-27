@@ -47,17 +47,10 @@ section {
   color: #ff1111;
 }
 
-
-
-
-
-
-
-
 h1 {
   font-weight: 500;
   font-size: 3rem;
-  margin-bottom: 5rem;                
+  margin-bottom: 5rem;
   margin-top: 4rem;
 }
 
@@ -65,20 +58,20 @@ h1 {
   font-weight: 400;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 input {
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .btn {
   color: white;
   background-color: #ff1111;
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
-  font-size: .9rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .form {
@@ -96,14 +89,13 @@ input {
   margin-right: 8.5rem;
 }
 
-
 #about {
   background: #b6eadd;
 }
 
 #about span {
   color: #ff9c11;
-  margin-left: .7rem;
+  margin-left: 0.7rem;
 }
 
 #about h1 {
@@ -142,7 +134,7 @@ input {
 }
 
 .cell {
-  margin: .5rem;
+  margin: 0.5rem;
   margin-right: -2.5rem;
 }
 
@@ -155,7 +147,7 @@ iframe {
 
 .ch1 span {
   color: #ff9c11;
-  margin-left: .7rem;
+  margin-left: 0.7rem;
 }
 
 #contact {
